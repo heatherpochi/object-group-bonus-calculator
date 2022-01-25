@@ -39,14 +39,13 @@ const employees = [
 // This is not a race. Everyone on your team should understand what is happening.
 // Ask questions when you don't.
 
-// console.log(employees);
+console.log(employees);
 let output = [];
 
 for (employee of employees) {
   let employeeOutput = employeeInput(employee);
   console.log(employeeOutput);
 }
-
 
 
 function employeeInput(employee) {
@@ -64,10 +63,6 @@ function employeeInput(employee) {
   output.push(person)
   return person;
 }
-
-// employeeInput(employee);
-
-
 
 function calBonusPercentage(rating, salary, employeeNumber) {
   let percentage = 0;
@@ -95,7 +90,6 @@ function calBonusPercentage(rating, salary, employeeNumber) {
   percentage = percentage.toFixed(2);
   percentage = Number(percentage);
   return percentage;
-
 }
 
 function calBonusAmount(percentage, annualSalary) {
@@ -106,8 +100,6 @@ function calBonusAmount(percentage, annualSalary) {
   return totalBonus;
 }
 
-
-
 function Employee(name, bonusPercentage, totalCompensation, totalBonus) {
   this.name = name;
   this.bonusPercentage = bonusPercentage;
@@ -115,8 +107,5 @@ function Employee(name, bonusPercentage, totalCompensation, totalBonus) {
   this.totalBonus = totalBonus;
 }
 
-
-
 console.log(output);
 
-// console.log(employees[1].employeeNumber.length);
